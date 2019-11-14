@@ -27,6 +27,29 @@ class waveform:
         '''returns the standard deviation of the values'''
         return np.std(self.data, ddof=1)
     
+    ###############
+    ## Operators ##
+    ###############
 
+    def __mul__(self, mult):
+        return 0
 
+    def __rmul__(self, mult):
+        return self * mult # reverse multiplicators
+
+    def __add__(self, add):
+        '''concatenate two waveforms and resample the waveform with lower samplerate'''
+        return 0
+
+    #############
+    ## Subsets ##
+    #############
+
+    def partial(start=None, stop=None):
+        '''returns a waveform subset'''
+        return self
+
+    def get_xy(start=None, stop=None):
+        #Rückgabe von x, y Listen von start bis stop (in Sekunden)
+        return time, values
     
