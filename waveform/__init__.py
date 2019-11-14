@@ -45,11 +45,17 @@ class waveform:
     ## Subsets ##
     #############
 
-    def partial(start=None, stop=None):
+    def partial(self, start=None, stop=None):
         '''returns a waveform subset'''
+
+        #Benutzung von numpy interpolate?
+
         return self
 
-    def get_xy(start=None, stop=None):
+    def get_xy(self, start=None, stop=None):
         #Rückgabe von x, y Listen von start bis stop (in Sekunden)
         return time, values
     
+    def get_time(self):
+        '''returns a np array of timestamps (in seconds)'''
+        return []
