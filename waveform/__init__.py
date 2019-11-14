@@ -1,4 +1,4 @@
-import numpy as numpy
+import numpy as np
 
 class waveform:
     dt = 1
