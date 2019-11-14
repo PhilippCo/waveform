@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="waveform",
-    version="0.0.1",
+    version="0.1",
     author="Philipp Cochems",
     author_email="philipp.cochems@gmail.com",
     description="Waveform Container Class",
