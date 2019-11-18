@@ -41,6 +41,10 @@ class waveform:
         '''concatenate two waveforms and resample the waveform with lower samplerate'''
         return 0
 
+    def __radd__(self, add):
+        '''concatenate two waveforms and resample the waveform with lower samplerate'''
+        return self + add # reverse summands
+
     #############
     ## Subsets ##
     #############
